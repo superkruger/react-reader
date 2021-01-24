@@ -46,11 +46,13 @@ class ReactReader extends PureComponent {
   };
 
   next = () => {
+    console.log('NEXT')
     const node = this.readerRef.current;
     node.nextPage();
   };
 
   prev = () => {
+    console.log('PREV')
     const node = this.readerRef.current;
     node.prevPage();
   };
