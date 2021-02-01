@@ -131,6 +131,7 @@ class ReactReader extends PureComponent {
       styles,
       locationChanged,
       swipeable,
+      epubViewStyles,
       ...props
     } = this.props;
     const { toc, expandedToc } = this.state;
@@ -154,7 +155,7 @@ class ReactReader extends PureComponent {
               <EpubView
                 ref={this.readerRef}
                 loadingView={loadingView}
-                styles={styles}
+                styles={epubViewStyles}
                 {...props}
                 tocChanged={this.onTocChange}
                 locationChanged={locationChanged}
@@ -196,6 +197,7 @@ ReactReader.propTypes = {
   locationChanged: PropTypes.func,
   tocChanged: PropTypes.func,
   styles: PropTypes.object,
+  epubViewStyles: PropTypes.object,
   swipeable: PropTypes.bool
 };
 
