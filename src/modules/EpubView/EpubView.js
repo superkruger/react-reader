@@ -141,7 +141,7 @@ EpubView.defaultProps = {
   tocChanged: null,
   styles: defaultStyles,
   epubOptions: {},
-  epubInitOptions: {}
+  epubInitOptions: {openAs: "base64"}
 };
 
 EpubView.propTypes = {
